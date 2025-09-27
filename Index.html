@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sosial Media Saya</title>
+  <link rel="manifest" href="manifest.json">
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
+  <!-- Font Awesome untuk ikon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .container {
+      text-align: center;
+      background: rgba(255,255,255,0.05);
+      padding: 30px;
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+      width: 90%;
+      max-width: 400px;
+    }
+    .profile-pic {
+      width: 75%;
+      max-width: 250px;
+      border-radius: 15px;
+      margin-bottom: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    }
+    h1 {
+      margin-bottom: 10px;
+      font-size: 26px;
+    }
+    p {
+      margin-bottom: 20px;
+      color: #ddd;
+    }
+    .social-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin: 12px 0;
+      padding: 14px;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.1);
+      color: white;
+      font-size: 18px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    .social-link i {
+      font-size: 22px;
+    }
+    .social-link:hover {
+      background: #fff;
+      color: #2c5364;
+      transform: translateY(-3px);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Ganti "foto.jpg" dengan foto 3/4 kamu -->
+    <img src="foto.jpg" alt="Foto Saya" class="profile-pic">
+
+    <h1>Sosial Media Saya</h1>
+    <p>Ikuti & hubungi saya lewat link berikut:</p>
+    
+    <!-- Ganti URL dengan akun kamu -->
+    <a class="social-link" href="https://instagram.com/username" target="_blank">
+      <i class="fab fa-instagram"></i> Instagram
+    </a>
+    <a class="social-link" href="https://wa.me/6281234567890" target="_blank">
+      <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
+    <a class="social-link" href="https://tiktok.com/@username" target="_blank">
+      <i class="fab fa-tiktok"></i> TikTok
+    </a>
+  </div>
+</body>
+</html>
